@@ -25,6 +25,15 @@ x-tracker-secret: your-secret-here
   ]
 }
 
+### Get latest screenshot(s)
+GET http://localhost:3000/api/screenshots/latest
+
+### Get latest screenshots with limit
+GET http://localhost:3000/api/screenshots/latest?limit=5
+
+### Get latest screenshots for specific display
+GET http://localhost:3000/api/screenshots/latest?displayId=display-1&limit=3
+
 ### Test MCP Server
 
 ### Initialize the MCP server
